@@ -4,8 +4,8 @@ require "pry"
 
 class KNearestPointsTest < Minitest::Test
   def test_k_nearest_points
-    points = [ [1, 1], [2, 1], [10, 10] ]
-    points2 = [ [100, 100], [2, 1], [1000, 1337], [10, 10] ]
+    points = [[1, 1], [2, 1], [10, 10]]
+    points2 = [[100, 100], [2, 1], [1000, 1337], [10, 10]]
 
     assert_equal [[1, 1], [2, 1]], k_nearest_points(2, points)
     assert_equal [[2, 1], [10, 10], [100, 100]], k_nearest_points(3, points2)
